@@ -114,7 +114,7 @@ def wxpyt():
 		b35.config(bg="lightgreen")
 		b35.config(text ="OK")	
 	except ImportError:
-		subprocess.call([sys.executable, "-m", "pip", "install", "-U","wxPython"])		
+		subprocess.call([sys.executable, "-m", "pip", "install", "-U","wxPython==4.0.7"])		
 		
 		
 b31 = tk.Button(root, text="Numpy", width=8,command=numpyy)
